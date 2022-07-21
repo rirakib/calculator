@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="wrap">
+        <table>
+            <thead>
+                <tr>
+                        <th colspan="4" id="head">rir rakib</th>
+                </tr>
+                <tr>
+                    <th colspan="4"><input readonly type="text" id="input_file"></th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td onclick="Percentage('%')"><button  class="btn">%</button>
+                    </td>
+                    <td onclick="Clear()"><button  class="btn">CE</button>
+                    </td>
+                    <td onclick="allClear()"><button  class="btn">C</button>
+                    </td>
+                    <td onclick="Div('/')"><button class="btn">/</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td onclick="Display(7)"><button value="7" class="btn">7</button>
+                    </td>
+                    <td onclick="Display(8)"><button value="8" class="btn">8</button>
+                    </td>
+                    <td onclick="Display('9')"><button class="btn">9</button></td>
+                    <td onclick="Mult('*')"><button class="btn">*</button></td>
+                </tr>
+                <tr>
+                    <td onclick="Display('4')"><button class="btn">4</button></td>
+                    <td onclick="Display('5')"><button class="btn">5</button></td>
+                    <td onclick="Display('6')"><button class="btn">6</button></td>
+                    <td onclick="Sub('-')"><button class="btn">-</button></td>
+                </tr>
+                <tr>
+                    <td onclick="Display('1')"><button class="btn" id="one">1</button></td>
+                    <td onclick="Display('2')"><button class="btn">2</button></td>
+                    <td onclick="Display('3')"><button class="btn">3</button></td>
+                    <td onclick="Sum('+')"><button class="btn">+</button></td>
+                </tr>
+                <tr>
+                    <td onclick="Display('0')"><button  class="btn">0</button></td>
+                    <td onclick="Display('.')"><button  class="btn">.</button></td>
+                    <td  onclick="Calculate('=')"colspan="2"><button  class="btn">=</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
